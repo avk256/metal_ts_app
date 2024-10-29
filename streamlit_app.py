@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
+import plotly
 import plotly.express as px
+
+# Вивід версій Streamlit та Plotly
+st.sidebar.write(f"Версія Streamlit: {st.__version__}")
+st.sidebar.write(f"Версія Plotly: {plotly.__version__}")
+
 
 # Налаштування сторінки для ширшого виводу
 st.set_page_config(layout="wide")
